@@ -7,11 +7,11 @@
     <title>Document</title>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/carthtml.css">
+    <link rel="stylesheet" href="app/assets/css/carthtml.css">
 </head>
 <body>
     <section class="cart">
-   <h1> <img src="img\svg\cart.svg">السلة<span>(3منتجات)</span></h1>
+   <h1> <img src="app/assets/img/svg/cart.svg">السلة<span>(3منتجات)</span></h1>
     <div class="continer-box">
         
        <div class="boxes">
@@ -34,7 +34,7 @@
            
                <div class="box1">
                 <div class="heading">
-                 <div class="h1"><img src="img/b2.jpg"> </div>
+                 <div class="h1"><img src="app/assets/img/b2.jpg"> </div>
                  <div class="text"><h1>البداية والنهايه الجزء الاول كتاب الالكتروني</h1><p>منتج قابل للخصم مكتبة جرير</p></div> 
                  <h1>23<span>ر.س</span></h1>
                
@@ -50,7 +50,7 @@
                 </div>
                 <div class="box1">
                     <div class="heading">
-                     <div class="h1"><img src="img/b2.jpg"> </div>
+                     <div class="h1"><img src="app/assets/img/b2.jpg"> </div>
                      <div class="text"><h1>البداية والنهايه الجزء الاول كتاب الالكتروني</h1><p>منتج قابل للخصم مكتبة جرير</p></div> 
                      <h1>23<span>ر.س</span></h1>
                    

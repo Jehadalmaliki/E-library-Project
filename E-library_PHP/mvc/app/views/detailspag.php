@@ -6,10 +6,10 @@
     <title>Book store</title>
      <!-- font awesome cdn link  -->
     
-    <link rel="stylesheet" href="css/styleAR.css">
-    <link rel="stylesheet" href="css/homestyle.css">
+    <link rel="stylesheet" href="app/assets/css/styleAR.css">
+    <link rel="stylesheet" href="app/assets/css/homestyle.css">
     
-    <link rel="stylesheet" href="css/detailscss.css">
+    <link rel="stylesheet" href="app/assets/css/detailscss.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
@@ -22,14 +22,14 @@
                 <nav>
                     <div class="ul">
                 <ul>
-                    <li><a id="myBtn" ><img src="img\svg\svgexport-1.svg">ادخل لحسابك وسجل الان </a></li>
-                    <li><a href="library.php"><img src="img\svg\svgexport-2.svg">الرئيسيه</a></li>
-                    <li><a ><img src="img\svg\svgexport-3.svg">من نحن</a></li>
-                    <li><a ><img src="img\svg\svgexport-4.svg">اتصل بنا</a></li>
-                    <li><a ><img src="img\svg\svgexport-5.svg">المساعدة</a></li>
-                    <li><a ><img src="img\svg\svgexport-24.svg">صحيفة الاسبوعية</a></li>
-                    <li><a ><img src="img\svg\svgexport-28.svg">اليمن</a></li>
-                    <li><a  ><img src="img\svg\svgexport-14.svg" onclick="togglestyle()">English</a></li>    
+                    <li><a id="myBtn" ><img src="app/assets/img/svg/svgexport-1.svg">ادخل لحسابك وسجل الان </a></li>
+                    <li><a href="library.php"><img src="app/assets/img/svg/svgexport-2.svg">الرئيسيه</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-3.svg">من نحن</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-4.svg">اتصل بنا</a></li>
+                    <li><a ><img src="app/assets/img/svg/vgexport-5.svg">المساعدة</a></li>
+                    <li><a ><img src="app/assets/img/svg/vgexport-24.svg">صحيفة الاسبوعية</a></li>
+                    <li><a ><img src="app/assets/img/svg/vgexport-28.svg">اليمن</a></li>
+                    <li><a  ><img src="app/assets/img/svg/vgexport-14.svg" onclick="togglestyle()">English</a></li>    
                 </ul>
             </div>
              
@@ -144,19 +144,19 @@
           
           <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="img/sliderImgs/slider_img.webp" style="width:100%">
+            <img src="app/assets/img/sliderImgs/slider_img.webp" style="width:100%">
             <div class="text"></div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="img/sliderImgs/slider_img2.webp" style="width:100%">
+            <img src="app/assets/img/sliderapp/assets/s/slider_img2.webp" style="width:100%">
             <div class="text"></div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="img/sliderImgs/slider_img3.jpg" style="width:100%">
+            <img src="app/assets/img/sliderImgs/slider_img3.jpg" style="width:100%">
             <div class="text"></div>
           </div>
           
@@ -194,11 +194,11 @@
                      
                     <div class="box " id="border">
                     
-                        <img src="img/b4.jpg">
+                        <img src="app/assets/img/b4.jpg">
                       <div class="content">
                         <div class="row">
                           <div class="column">
-                            <img src="img/b4.jpg"  style="width:100% ; border: 1px solid blue;border-radius: 4px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            <img src="app/assets/img/b4.jpg"  style="width:100% ; border: 1px solid blue;border-radius: 4px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                           </div>
                           
                         
@@ -210,22 +210,22 @@
                         
                             <div class="mySlides1">
                               <div class="numbertext">1 / 4</div>
-                              <img src="img/b4.jpg" style="width:100%">
+                              <img src="app/assets/img/b4.jpg" style="width:100%">
                             </div>
                         
                             <div class="mySlides1">
                               <div class="numbertext">2 / 4</div>
-                              <img src="img/b3.jpg" style="width:100%">
+                              <img src="app/assets/img/b3.jpg" style="width:100%">
                             </div>
                         
                             <div class="mySlides1">
                               <div class="numbertext">3 / 4</div>
-                              <img src="img/b2.jpg" style="width:100%">
+                              <img src="app/assets/img/b2.jpg" style="width:100%">
                             </div>
                             
                             <div class="mySlides1">
                               <div class="numbertext">4 / 4</div>
-                              <img src="img/b4.jpg" style="width:100%">
+                              <img src="app/assets/img/b4.jpg" style="width:100%">
                             </div>
                             
                             <a class="prev6" onclick="plusSlides_im(-1)">&#10094;</a>
@@ -309,12 +309,12 @@
                     </div> 
                     <div class ="inside" >
                       <div class="lefty">
-                       <div class="a"> <img src="img\svg\svgexport-3.svg"> تسوق امن <img src="img\svg\svgexport-2.svg"></div>
-                        <div class="a"><img src="img\svg\svgexport-4.svg"> تسوق امن <img src="img\svg\svgexport-5.svg"></div>
+                       <div class="a"> <img src="app/assets/img/svg/svgexport-3.svg"> تسوق امن <img src="app/assets/img/svg/svgexport-2.svg"></div>
+                        <div class="a"><img src="app/assets/img/svg/svgexport-4.svg"> تسوق امن <img src="app/assets/img/svg/svgexport-5.svg"></div>
 
                       </div>
                       <div class="righty">
-                        <img src="img\svg\svgexport-3.svg"> تسوق امن <img src="img\svg\svgexport-3.svg">
+                        <img src="app/assets/img/svg/svgexport-3.svg"> تسوق امن <img src="app/assets/img/svg/svgexport-3.svg">
                       </div>
                     </div>  
                     <div class="end" >
@@ -526,13 +526,13 @@
                 <div class="box">
                     <h3>روابط سريعة</h3>
                       <h1></h1>
-                    <a href="#"> <img src="img\svg\svgexport-59.svg"></a>
-                    <a href="#"> <img src="img\svg\svgexport-60.svg"></a>
-                    <a href="#"><img src="img\svg\svgexport-61.svg"></i></a>
-                    <a href="#"> <img src="img\svg\svgexport-62.svg"></a>
-                    <a href="#"> <img src="img\svg\svgexport-63.svg"></a>
-                    <a href="#"><img src="img\svg\svgexport-64.svg"></a>
-                    <a href="#"><img src="img\svg\svgexport-65.svg"></a>
+                    <a href="#"> <img src="app/assets/img/svg/svgexport-59.svg"></a>
+                    <a href="#"> <img src="app/assets/img/svg/svgexport-60.svg"></a>
+                    <a href="#"><img src="app/assets/img/svg/svgexport-61.svg"></i></a>
+                    <a href="#"> <img src="app/assets/img/svg/svgexport-62.svg"></a>
+                    <a href="#"> <img src="app/assets/img/svg/svgexport-63.svg"></a>
+                    <a href="#"><img src="app/assets/img/svg/svgexport-64.svg"></a>
+                    <a href="#"><img src="app/assets/img/svg/svgexport-65.svg"></a>
                 </div>
                 
             </div>
@@ -542,12 +542,12 @@
                     <div class="box">
                         <h3></h3>
                         
-                        <a href="#"> <img src="img\svg\svgexport-66.svg"></a>
-                        <a href="#"> <img src="img\svg\svgexport-67.svg"></a>
-                        <a href="#"><img src="img\svg\svgexport-68.svg"></i></a>
-                        <a href="#"> <img src="img\svg\svgexport-69.svg"></a>
-                        <a href="#"> <img src="img\svg\svgexport-70.svg"></a>
-                        <a href="#"><img src="img\svg\svgexport-71.svg"></i></a>
+                        <a href="#"> <img src="app/assets/img/svg/svgexport-66.svg"></a>
+                        <a href="#"> <img src="app/assets/img/svg/svgexport-67.svg"></a>
+                        <a href="#"><img src="app/assets/img/svg/svgexport-68.svg"></i></a>
+                        <a href="#"> <img src="app/assets/img/svg/svgexport-69.svg"></a>
+                        <a href="#"> <img src="app/assets/img/svg/svgexport-70.svg"></a>
+                        <a href="#"><img src="app/assets/img/svg/svgexport-71.svg"></i></a>
                     </div>
                     <div class="box">
                         <h3>سياسة الخصوصية|شروط الخدمة</h3>
@@ -558,11 +558,11 @@
    
    
     
-          <script src="script/cartcount.js"></script>
-          <script src="script/script.js"></script>
-          <script src="script/login.js"></script>
-          <script src="script/slider.js"></script>
-          <script src="script/ChangLan.js"></script> 
+          <script src="app/assets/script/cartcount.js"></script>
+          <script src="app/assets/script/script.js"></script>
+          <script src="app/assets/script/login.js"></script>
+          <script src="app/assets/script/slider.js"></script>
+          <script src="app/assets/script/ChangLan.js"></script> 
     
 </body>
 
