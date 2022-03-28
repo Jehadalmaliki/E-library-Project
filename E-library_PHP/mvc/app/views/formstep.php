@@ -6,9 +6,9 @@
     <title>Book store</title>
      <!-- font awesome cdn link  -->
     
-    <link rel="stylesheet" href="css/styleAR.css">
+    <link rel="stylesheet" href="app/assets/css/styleAR.css">
     <!-- <link rel="stylesheet" href="css/homestyle.css"> -->
-    <link rel="stylesheet" href="css/formstepcss.css">
+    <link rel="stylesheet" href="app/assets/css/formstepcss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
 </head>
@@ -20,25 +20,25 @@
                 <nav>
                     <div class="ul">
                 <ul>
-                    <li><a id="myBtn" ><img src="img\svg\svgexport-1.svg">ادخل لحسابك وسجل الان </a></li>
-                    <li><a href="library.php" ><img src="img\svg\svgexport-2.svg">الرئيسيه</a></li>
-                    <li><a ><img src="img\svg\svgexport-3.svg">من نحن</a></li>
-                    <li><a ><img src="img\svg\svgexport-4.svg">اتصل بنا</a></li>
-                    <li><a ><img src="img\svg\svgexport-5.svg">المساعدة</a></li>
-                    <li><a ><img src="img\svg\svgexport-24.svg">صحيفة الاسبوعية</a></li>
-                    <li><a ><img src="img\svg\svgexport-28.svg">اليمن</a></li>
-                    <li><a  ><img src="img\svg\svgexport-14.svg" onclick="togglestyle()">English</a></li>    
+                    <li><a id="myBtn" ><img src="app/assets/img/svg/svgexport-1.svg">ادخل لحسابك وسجل الان </a></li>
+                    <li><a href="library.php" ><img src="app/assets/img/svg/svgexport-2.svg">الرئيسيه</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-3.svg">من نحن</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-4.svg">اتصل بنا</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-5.svg">المساعدة</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-24.svg">صحيفة الاسبوعية</a></li>
+                    <li><a ><img src="app/assets/img/svg/svgexport-28.svg">اليمن</a></li>
+                    <li><a  ><img src="app/assets/img/svg/svgexport-14.svg" onclick="togglestyle()">English</a></li>    
                 </ul>
             </div>
              
              <div class="search" id="search">
-                <div class ="icon1"> <img src="img\svg\img.png" ></div>
+                <div class ="icon1"> <img src="app/assets/img/svg/img.png" ></div>
                  <div class="form"><form><input type="search"  placeholder="البحث">
                   <i class="fa fa-search"></i>
                     
                 </form></div>
                 
-                 <div class ="icon"> <a href="cart.html"><div class="span">0</div><img src="img\svg\svgexport-50.svg"></a></div>
+                 <div class ="icon"> <a href="cart.html"><div class="span">0</div><img src="app/assets/img/svg/svgexport-50.svg"></a></div>
              </div>
             </nav>
          </header>
@@ -295,13 +295,13 @@
           <div class="box">
               <h3>روابط سريعة</h3>
                 <h1></h1>
-              <a href="#"> <img src="img\svg\svgexport-59.svg"></a>
-              <a href="#"> <img src="img\svg\svgexport-60.svg"></a>
-              <a href="#"><img src="img\svg\svgexport-61.svg"></i></a>
-              <a href="#"> <img src="img\svg\svgexport-62.svg"></a>
-              <a href="#"> <img src="img\svg\svgexport-63.svg"></a>
-              <a href="#"><img src="img\svg\svgexport-64.svg"></a>
-              <a href="#"><img src="img\svg\svgexport-65.svg"></a>
+              <a href="#"> <img src="app/assets/img/svg/svgexport-59.svg"></a>
+              <a href="#"> <img src="app/assets/img/svg/svgexport-60.svg"></a>
+              <a href="#"><img src="app/assets/img/svg/svgexport-61.svg"></i></a>
+              <a href="#"> <img src="app/assets/img/svg/svgexport-62.svg"></a>
+              <a href="#"> <img src="app/assets/img/svg/svgexport-63.svg"></a>
+              <a href="#"><img src="app/assets/img/svg/svgexport-64.svg"></a>
+              <a href="#"><img src="app/assets/img/svg/svgexport-65.svg"></a>
           </div>
           
       </div>
@@ -311,12 +311,12 @@
               <div class="box">
                   <h3></h3>
                   
-                  <a href="#"> <img src="img\svg\svgexport-66.svg"></a>
-                  <a href="#"> <img src="img\svg\svgexport-67.svg"></a>
-                  <a href="#"><img src="img\svg\svgexport-68.svg"></i></a>
-                  <a href="#"> <img src="img\svg\svgexport-69.svg"></a>
-                  <a href="#"> <img src="img\svg\svgexport-70.svg"></a>
-                  <a href="#"><img src="img\svg\svgexport-71.svg"></i></a>
+                  <a href="#"> <img src="app/assets/img/svg/svgexport-66.svg"></a>
+                  <a href="#"> <img src="app/assets/img/svg/svgexport-67.svg"></a>
+                  <a href="#"><img src="app/assets/img/svg/svgexport-68.svg"></i></a>
+                  <a href="#"> <img src="app/assets/img/svg/svgexport-69.svg"></a>
+                  <a href="#"> <img src="app/assets/img/svg/svgexport-70.svg"></a>
+                  <a href="#"><img src="app/assets/img/svg/svgexport-71.svg"></i></a>
               </div>
               <div class="box">
                   <h3>سياسة الخصوصية|شروط الخدمة</h3>
