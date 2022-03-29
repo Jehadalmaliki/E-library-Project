@@ -33,11 +33,9 @@ class CategoriesController extends Controller{
 
       
         if($category->save())
-        
-        $this->view('feedback',['success'=>'data inserted successful']);
+        $this->view('feedback',['success'=>'تم ادخال البيانات بنجاح']);
         else 
-        $this->view('feedback',['danger'=>'can not add data']);
-
+        $this->view('feedback',['danger'=>'للاسف ! اعد المحاوله']);
 
     }
     function edit(){

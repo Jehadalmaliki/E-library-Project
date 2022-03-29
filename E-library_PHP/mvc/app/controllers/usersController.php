@@ -34,10 +34,9 @@ class UsersController extends Controller{
         $user->save();
         if($user->save())
         
-        $this->view('feedback',['success'=>'data inserted successful']);
+        $this->view('feedback',['success'=>'تم ادخال البيانات بنجاح']);
         else 
-        $this->view('feedback',['danger'=>'can not add data']);
-
+        $this->view('feedback',['danger'=>'للاسف ! اعد المحاوله']);
     }
 
     public function register(){
