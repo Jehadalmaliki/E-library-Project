@@ -10,7 +10,15 @@ class UsersController extends Controller{
     }
 
         public function show(){
-            $this->view('list_categories');
+            $this->view('');
+
+    }
+    function listAll(){
+        $user=new User();
+        $allusers=$user->getAll();
+        //print_r($allusers);
+
+        $this->view('list_users',$allusers);
 
     }
 
@@ -33,7 +41,7 @@ class UsersController extends Controller{
     }
 
     public function register(){
-        $this->view("new_user");
+        $this->view("new");
     }
 
     public function delete(){

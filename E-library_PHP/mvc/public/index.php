@@ -23,14 +23,21 @@ $system=new AppSystem($config);
 
 /** web routes  */
 
-
+// Categories Router
 Router::get('/categories',[CategoriesController::class,'listAll']);
-
 Router::get('/add_category',[CategoriesController::class,'create']);
 Router::get('/edit_category/{id}',[CategoriesController::class,'edit']);
 Router::get('/remove_category',[CategoriesController::class,'remove']);
 Router::post('/save_category',[CategoriesController::class,'store']);
 Router::post('/update_category',[CategoriesController::class,'update']);
+
+//User Router
+Router::get('/users',[UsersController::class,'listAll']);
+Router::get('/new_user',[UsersController::class,'newUser']);
+Router::post('/save_user',[UsersController::class,'saveUser']);
+
+//Authore Router
+Router::get('/save_author',[AuthorsController::class,'createAuthor']);
 
 /** end of web routes */
 
