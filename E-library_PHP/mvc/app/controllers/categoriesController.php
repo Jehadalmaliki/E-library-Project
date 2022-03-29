@@ -31,7 +31,13 @@ class CategoriesController extends Controller{
         $category->created_by=1;
         $category->is_active=$_POST['is_active'];
 
-        $category->save();
+      
+        if($category->save())
+        
+        $this->view('feedback',['success'=>'data inserted successful']);
+        else 
+        $this->view('feedback',['danger'=>'can not add data']);
+
 
     }
     function edit(){
