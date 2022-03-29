@@ -86,7 +86,19 @@
     <div>عرض مؤلف</div>
   </a>
 </li>
+<!-- Publisher & Tables -->
+<li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المؤلفين</span></li>
 
+<li class="menu-item">
+<a href="/new_Publisher" class="menu-link">
+  <div>ادخال دار نشر</div>
+</a>
+</li>
+<li class="menu-item">
+<a href="/publisher" class="menu-link">
+  <div>عرض دور النشر</div>
+</a>
+</li>
 
   <!-- Misc -->
   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الاقسام والتصنيفات</span></li>

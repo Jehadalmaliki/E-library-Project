@@ -42,7 +42,10 @@ Router::get('/new_author',[AuthorsController::class,'newAuthor']);
 Router::post('/save_author',[AuthorsController::class,'createAuthor']);
 
 /** end of web routes */
-
+//Publisher Router
+Router::get('/publisher',[publishersController::class,'listAll']);
+Router::get('/new_Publisher',[publishersController::class,'newPublisher']);
+Router::post('/save_Publishers',[publishersController::class,'createPublisher']);
 
 
 $system->start();
