@@ -73,7 +73,19 @@
     <div>عرض المستخدمين</div>
   </a>
 </li>
- 
+  <!-- AUTHORS & Tables -->
+  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المؤلفين</span></li>
+
+  <li class="menu-item">
+  <a href="/new_author" class="menu-link">
+    <div>انشاء مؤلف</div>
+  </a>
+</li>
+<li class="menu-item">
+  <a href="/authors" class="menu-link">
+    <div>عرض مؤلف</div>
+  </a>
+</li>
 
 
   <!-- Misc -->

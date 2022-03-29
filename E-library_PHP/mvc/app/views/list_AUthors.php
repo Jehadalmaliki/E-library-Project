@@ -79,15 +79,17 @@
             <!-- Multi Column with Form Separator -->
             <!-- Bordered Table -->
 <div class="card">
-  <h5 class="card-header">جدول المستخدمين</h5>
+  <h5 class="card-header">جدول المؤلفين</h5>
   <div class="card-body">
     <div class="table-responsive text-nowrap">
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>اسم المستخدم</th>
+            <th>اسم </th>
+            <th>الرقم </th>
+            <th>نبذه عنه </th>
             <th>الايميل</th>
-            <th>كلمه المرور</th>
+           
             
             <th>العمليات</th>
           </tr>
@@ -95,15 +97,16 @@
         <tbody>
        
          
-         <?php foreach($params as $allusers){?>
+         <?php foreach($params as $allAUthors){?>
           <tr>
             
-            <td><?= $allusers['name'];?></td>
-            <td><?= $allusers['email'];?></td>
-            <td><?= $allusers['password'];?></td>
+            <td><?= $allAUthors['name'];?></td>
+            <td><?= $allAUthors['phone'];?></td>
+            <td><?= $allAUthors['bio'];?></td>
+            <td><?= $allAUthors['email'];?></td>
            
             <td>
-            <?php if($allusers['is_active']==1) {?>    
+            <?php if($allAUthors['is_active']==1) {?>    
             <span class="badge bg-label-success me-1">مفعل</span>
             <?php }
             else {?>
@@ -111,7 +114,7 @@
             <?php } ?>
             </td>
             <td>
-            <a href="/edit_allusers/<?php echo $allusers['id'];?>" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_allAUthors/<?php echo $allAUthors['id'];?>" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">

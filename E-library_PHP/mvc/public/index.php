@@ -37,7 +37,9 @@ Router::get('/new_user',[UsersController::class,'newUser']);
 Router::post('/save_user',[UsersController::class,'saveUser']);
 
 //Authore Router
-Router::get('/save_author',[AuthorsController::class,'createAuthor']);
+Router::get('/authors',[AuthorsController::class,'listAll']);
+Router::get('/new_author',[AuthorsController::class,'newAuthor']);
+Router::post('/save_author',[AuthorsController::class,'createAuthor']);
 
 /** end of web routes */
 
