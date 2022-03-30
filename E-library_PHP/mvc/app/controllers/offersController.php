@@ -19,5 +19,5 @@ class offersController extends Controller{
        
     }
 
-}
+} 
 ?>
