@@ -9,6 +9,7 @@ use coding\app\controllers\CityController;
 use coding\app\controllers\payementsController;
 use coding\app\controllers\BooksController;
 use coding\app\controllers\offersController;
+use coding\app\controllers\ordersController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -72,10 +73,15 @@ Router::get('/books',[BooksController::class,'listAll']);
 Router::get('/new_books',[BooksController::class,'newbooks']);
 Router::post('/save_books',[BooksController::class,'store']);
 
-// Books Router
+// offers Router
 Router::get('/offers',[offersController::class,'listAll']);
 Router::get('/new_offers',[offersController::class,'newoffers']);
 Router::post('/save_offers',[offersController::class,'store']);
+
+// orders Router
+Router::get('/order',[ordersController::class,'listAll']);
+Router::get('/new_orders',[ordersController::class,'newOrder']);
+Router::post('/save_orders',[ordersController::class,'store']);
 
 /** end of web routes */
 $system->start();
