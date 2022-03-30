@@ -4,6 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use coding\app\controllers\AuthorsController;
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\PublishersController;
+use coding\app\controllers\CityController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 use coding\app\controllers\UsersController;
@@ -41,12 +42,15 @@ Router::get('/authors',[AuthorsController::class,'listAll']);
 Router::get('/new_author',[AuthorsController::class,'newAuthor']);
 Router::post('/save_author',[AuthorsController::class,'createAuthor']);
 
-/** end of web routes */
+
 //Publisher Router
 Router::get('/publisher',[publishersController::class,'listAll']);
 Router::get('/new_Publisher',[publishersController::class,'newPublisher']);
 Router::post('/save_Publishers',[publishersController::class,'createPublisher']);
-
-
+//Cities
+Router::get('/city',[CityController::class,'listAll']);
+Router::get('/new',[CityController::class,'newCity']);
+Router::post('/save_city',[CityController::class,'createCity']);
+/** end of web routes */
 $system->start();
 
