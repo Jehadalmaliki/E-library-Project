@@ -2,29 +2,29 @@
 
 namespace coding\app\controllers;
 
-use coding\app\models\Payement;
+use coding\app\models\payements;
 
-class PayementController extends Controller{
+class PayementsController extends Controller{
 
     function listAll(){
-        $Payement=new Payement();
-        $allPayement=$categories->getAll();
+        $Payement=new Payements();
+        $allPayement=$Payement->getAll();
         //print_r($allPayement);
 
         $this->view('list_Payement',$allPayement);
 
     }
     function create(){
-        $this->view('add_Payement');
+        $this->view('new_Payement');
 
     }
 
     function store(){
         print_r($_POST);
         print_r($_FILES);
-        $Payement=new Payement();
+        $Payement=new Payements();
         
-        $Payement->name=$_POST['Payement_name'];
+        $Payement->name=$_POST['name'];
         $imageName=$this->uploadFile($_FILES['image']);
 
         $Payement->image=$imageName!=null?$imageName:"default.png";

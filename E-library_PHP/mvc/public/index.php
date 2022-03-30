@@ -2,11 +2,11 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 use coding\app\controllers\Useradds;
 use coding\app\controllers\AuthorsController;
-
+use coding\app\controllers\UsersController;
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\PublishersController;
 use coding\app\controllers\CityController;
-
+use coding\app\controllers\payementsController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -59,6 +59,13 @@ Router::post('/save_city',[CityController::class,'createCity']);
 Router::get('/useradd',[Useradds::class,'listAll']);
 Router::get('/newuseradd',[Useradds::class,'newUseradd']);
 Router::post('/save_useradd',[Useradds::class,'creat']);
+
+// Payements Router
+Router::get('/Payements',[PayementsController::class,'listAll']);
+Router::get('/new_Payement',[PayementsController::class,'create']);
+Router::post('/save_Payements',[PayementsController::class,'store']);
+
+
 /** end of web routes */
 $system->start();
 

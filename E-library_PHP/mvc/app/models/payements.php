@@ -2,7 +2,7 @@
 
 namespace coding\app\models;
 
-class Payement extends Model{
+class Payements extends Model{
     function __construct()
     {
 
