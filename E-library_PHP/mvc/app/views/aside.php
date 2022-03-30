@@ -61,6 +61,27 @@
 
 
   <!-- Forms & Tables -->
+  <!-- Books -->
+  <li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره  الكتب"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_books" class="menu-link">
+          <div data-i18n="اضافه  كتاب "> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/books" class="menu-link">
+        <div data-i18n="عرض الكتب"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
+
+
 <!-- Users -->
 <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
