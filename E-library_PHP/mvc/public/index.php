@@ -1,13 +1,15 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
-
+use coding\app\controllers\Useradds;
 use coding\app\controllers\AuthorsController;
+
 use coding\app\controllers\CategoriesController;
 use coding\app\controllers\PublishersController;
 use coding\app\controllers\CityController;
+
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
-use coding\app\controllers\UsersController;
+
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));//createImmutable(__DIR__);
@@ -51,6 +53,12 @@ Router::post('/save_Publishers',[publishersController::class,'createPublisher'])
 Router::get('/city',[CityController::class,'listAll']);
 Router::get('/new',[CityController::class,'newCity']);
 Router::post('/save_city',[CityController::class,'createCity']);
+
+//useradd
+
+Router::get('/useradd',[Useradds::class,'listAll']);
+Router::get('/newuseradd',[Useradds::class,'newUseradd']);
+Router::post('/save_useradd',[Useradds::class,'creat']);
 /** end of web routes */
 $system->start();
 
