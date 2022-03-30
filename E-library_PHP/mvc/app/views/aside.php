@@ -61,132 +61,147 @@
 
 
   <!-- Forms & Tables -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المستخدمين</span></li>
-
-  <li class="menu-item">
-  <a href="/new_user" class="menu-link">
-    <div>انشاء مستخدم</div>
-  </a>
-</li>
+<!-- Users -->
 <li class="menu-item">
-  <a href="/users" class="menu-link">
-    <div>عرض المستخدمين</div>
-  </a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="profile المستخدم">profile المستخدم</div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_user" class="menu-link">
+          <div data-i18n="اضافة profile المستخدم">اضافة profile المستخدم</div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/users" class="menu-link">
+          <div data-i18n=" عرض profile المستخدم" > عرض profile المستخدم </div>
+        </a>
+      </li>
+    </ul>
+  </li>
   <!-- AUTHORS & Tables -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المؤلفين</span></li>
-
-  <li class="menu-item">
-  <a href="/new_author" class="menu-link">
-    <div>انشاء مؤلف</div>
-  </a>
-</li>
+  
 <li class="menu-item">
-  <a href="/authors" class="menu-link">
-    <div>عرض مؤلف</div>
-  </a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره المؤلفين"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_author" class="menu-link">
+          <div data-i18n="اضافه مولف"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/authors" class="menu-link">
+        <div data-i18n="عرض المولف"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
 <!-- Publisher & Tables -->
-<li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المؤلفين</span></li>
 
 <li class="menu-item">
-<a href="/new_Publisher" class="menu-link">
-  <div>ادخال دار نشر</div>
-</a>
-</li>
-<li class="menu-item">
-<a href="/publisher" class="menu-link">
-  <div>عرض دور النشر</div>
-</a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره دار النشر"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_author" class="menu-link">
+          <div data-i18n="اضافه دار النشر"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/authors" class="menu-link">
+        <div data-i18n="عرض دار النشر"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
 <!-- City & Tables -->
-<li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة المؤلفين</span></li>
 
 <li class="menu-item">
-<a href="/new" class="menu-link">
-  <div>ادخال المدينه</div>
-</a>
-</li>
-<li class="menu-item">
-<a href="/city" class="menu-link">
-  <div>عرض المدن</div>
-</a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره المدن"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new" class="menu-link">
+          <div data-i18n="اضافه مدينه"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/city" class="menu-link">
+        <div data-i18n="عرض المدن"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
   <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الاقسام والتصنيفات</span></li>
-  <li class="menu-item">
-  <a href="/add_category" class="menu-link">
-    <div>انشاء قسم</div>
-  </a>
-</li>
+ 
 <li class="menu-item">
-  <a href="/categories" class="menu-link">
-    <div>عرض الاقسام</div>
-  </a>
-</li>
-  <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الطلبات</span></li>
-  <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>طلبات جديدة</div>
-  </a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره الاقسام"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/add_category" class="menu-link">
+          <div data-i18n="اضافه قسم"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/categories" class="menu-link">
+        <div data-i18n="عرض الاقسام"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
+<!-- UserAddress -->
 <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>طلبات مكتملة</div>
-  </a>
-</li>
-
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>طلبات قيد المعالجة </div>
-  </a>
-</li>
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>طلبات ملغية</div>
-  </a>
-</li>
-  <!-- Misc -->
-  <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة الكتب/span></li>
-  <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>اضافة كتاب</div>
-  </a>
-</li>
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>عرض الكتب</div>
-  </a>
-</li>
-   <!-- Misc -->
-   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة طرق الدفع</span></li>
-   <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>اضافة طريقة </div>
-  </a>
-</li>
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>عرض الطرق</div>
-  </a>
-</li>
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره العناوين الاقسام"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/newuseradd" class="menu-link">
+          <div data-i18n="اضافه عنوان مستخدم"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/useradd" class="menu-link">
+        <div data-i18n="عرض التفاصيل"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
 
 
-   <!-- Misc -->
-   <li class="menu-header small text-uppercase"><span class="menu-header-text">ادارة  الدفع</span></li>
-   <li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>اضافة طريقة </div>
-  </a>
-</li>
-<li class="menu-item">
-  <a href="#" class="menu-link">
-    <div>عرض الطرق</div>
-  </a>
-</li>
-</ul>
 
+<!-- Pyements -->
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره  الدفع"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_Payement" class="menu-link">
+          <div data-i18n="اضافه  طريقه دفع"> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/Payements" class="menu-link">
+        <div data-i18n="عرض الطرق"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
 
 
 </aside>
