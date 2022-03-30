@@ -8,6 +8,7 @@ use coding\app\controllers\PublishersController;
 use coding\app\controllers\CityController;
 use coding\app\controllers\payementsController;
 use coding\app\controllers\BooksController;
+use coding\app\controllers\offersController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -70,6 +71,11 @@ Router::post('/save_Payements',[PayementsController::class,'store']);
 Router::get('/books',[BooksController::class,'listAll']);
 Router::get('/new_books',[BooksController::class,'newbooks']);
 Router::post('/save_books',[BooksController::class,'store']);
+
+// Books Router
+Router::get('/offers',[offersController::class,'listAll']);
+Router::get('/new_offers',[offersController::class,'newoffers']);
+Router::post('/save_offers',[offersController::class,'store']);
 
 /** end of web routes */
 $system->start();

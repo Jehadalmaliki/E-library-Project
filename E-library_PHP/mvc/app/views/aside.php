@@ -80,7 +80,25 @@
       </li>
     </ul>
   </li>
-
+ <!-- Offers -->
+ <li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <i class="menu-icon tf-icons bx bx-user"></i>
+      <div data-i18n="اداره  التخفيضات"> </div>
+    </a>
+    <ul class="menu-sub">
+    <li class="menu-item">
+        <a href="/new_offers" class="menu-link">
+          <div data-i18n="اضافه  تخفيض "> </div>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="/offers" class="menu-link">
+        <div data-i18n="عرض التخفيضات"> </div>
+        </a>
+      </li>
+    </ul>
+  </li>
 
 <!-- Users -->
 <li class="menu-item">
