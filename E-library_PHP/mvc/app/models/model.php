@@ -30,6 +30,7 @@ class Model{
         if($stmt->execute())
         return true;
         return false;
+        
        // return true;
      //echo $sql_query;
     }
