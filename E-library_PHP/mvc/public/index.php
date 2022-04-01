@@ -82,7 +82,7 @@ Router::post('/save_Payements',[PayementsController::class,'store']);
 // Books Router
 Router::get('/books',[BooksController::class,'listAll']);
 Router::get('/new_books',[BooksController::class,'newbooks']);
-Router::post('/save_books',[BooksController::class,'store']);
+Router::post('/save_book',[BooksController::class,'createbooks']);
 
 // offers Router
 Router::get('/offers',[offersController::class,'listAll']);

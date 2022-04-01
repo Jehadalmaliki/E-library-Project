@@ -85,24 +85,57 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>العنوان </th>
-            <th>الصوره </th>
-            <th> السعر </th>
+          <th>عنوان الكتاب</th>
+            <th>الصورة</th>
+            <th>السعر</th>
             <th>الوصف</th>
-            <th>عدد  الصفحات</th>
-            <th>رقم القسم</th>
-            <th>رقم المؤلف</th>
-            <th>رقم الناشر</th>
-            <th> الكميه</th>
-            <th> الصيغه</th>
-            
-           
-            
+            <th>القسم</th>
+            <th>الكاتب</th>
+            <th>الناشر</th>
+            <th>عدد الصفحات</th>
+            <th>الكمية</th>
+            <th>الصيغة</th>
+            <th>انشى بواسطة</th>
+            <th>الحالة</th>
             <th>العمليات</th>
           </tr>
         </thead>
         <tbody>
-       
+        <?php foreach($params as $book){?>
+          <tr>
+            
+            <td><?= $book['title'];?></td>
+            <td>
+              <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $book['image'];?>">
+            </td>
+            <td><?= $book['price'];?></td>
+            <td><?= $book['description'];?></td>
+            <td><?= $book['category_id'];?></td>
+            <td><?= $book['author_id'];?></td>
+            <td><?= $book['publisher_id'];?></td>
+            <td><?= $book['pages_number'];?></td>
+            <td><?= $book['quantity'];?></td>
+            <td><?= $book['format'];?></td>
+            <td><?= $book['created_by'];?></td>
+            <td>
+            <?php if($book['is_active']==1) {?>    
+            <span class="badge bg-label-success me-1">مفعل</span>
+            <?php }
+            else {?>
+             <span class="badge bg-label-danger me-1">موقف</span>
+            <?php } ?>
+            </td>
+            <td>
+            <a href="/edit_book/<?php echo $book['id'];?>" class="btn btn-icon btn-outline-dribbble">
+                <i class="tf-icons bx bx-edit-alt me-1"></i>
+              </a>
+              <button type="button" class="btn btn-icon btn-outline-dribbble">
+                <i class="tf-icons bx bx-trash me-1"></i>
+              </button>
+              
+            </td>
+          </tr>
+          <?php } ?>
          
      
     

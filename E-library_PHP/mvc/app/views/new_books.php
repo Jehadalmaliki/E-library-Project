@@ -57,88 +57,126 @@
       
 
       <!-- Content wrapper -->
+      <!-- Content wrapper -->
       <div class="content-wrapper">
 
         <!-- Content -->
-<div class="container-xxl flex-grow-1 container-p-y">
+        
+          <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> </h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> اضافة كتاب</h4>
 
+
+<!-- Multi Column with Form Separator -->
 <div class="card mb-4">
- 
-  <form class="card-body" action="/save_books" method="POST">
-    <h6>تفاصيل الكتاب </h6>
+  <form class="card-body" action="/save_book" method="POST" enctype="multipart/form-data">
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">العنوان </label>
-        <input name="user_id" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-username">عنوان الكتاب</label>
+        <input name="title" type="text" id="multicol-username" class="form-control" placeholder="" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> الصوره</label>
-        <input name="city_id" type="" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
+          <label for="formFile" class="form-label">الصورة</label>
+          <input class="form-control" name="image" type="file" id="formFile">
+        </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">السعر</label>
-        <input name="phone" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> الوصف</label>
-        <input name="address" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> عدد  الصفحات</label>
-        <input name="lat" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> رقم القسم</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> رقم المؤلف</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> رقم الناشر</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-pages_number">رقم الصفحات</label>
+        <input name="pages_number" type="number" id="multicol-pages_number" class="form-control" placeholder="" />
       </div>
 
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">  الكميه</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-username">سعر الكتاب</label>
+        <input name="price" type="number" id="multicol-phone" class="form-control" placeholder="" />
       </div>
-
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username">  الصيغه</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+      <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
+      <label class="form-label" for="multicol-email">  القسم</label>
+                    <select name="categories" class="form-select item-details mb-2">
+                    <?php
+                foreach($params['categories'] as $category){
+                 ?>
+    <option  value ='<?=$category['id']?>'><?=$category['name']?></option>
+			       	
+		         	<?php
+ 
+                         }?>
+               
+                    </select>
       </div>
-      
-      
-     
-      <div class="col-md-6">
-        <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">user activation</label>
-          <div class="input-group input-group-merge">
-          <label class="switch">
-              <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
-              <span class="switch-toggle-slider">
-                <span class="switch-on"></span>
-                <span class="switch-off"></span>
-              </span>
-              <span class="switch-label">is active</span>
-            </label>
-          </div>
+      <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
+      <label class="form-label" for="multicol-email"> الكاتب</label>
+                    <select name="authors" class="form-select item-details mb-2">
+                    <?php
+                foreach($params['authors'] as $author){
+                 ?>
+    <option  value ='<?=$author['id']?>'><?=$author['name']?></option>
+			       	
+		         	<?php
+ 
+                         }?>
+                    </select>
+      </div>
+      <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
+      <label class="form-label" for="multicol-email"> الناشر</label>
+                    <select name="publishers" class="form-select item-details mb-2">
+                    <?php
+                foreach($params['publishers'] as $publisher){
+                 ?>
+    <option  value ='<?=$publisher['id']?>'><?=$publisher['name']?></option>
+			       	
+		         	<?php
+                 }?>
+               
+                 </select>
+   </div>
+   <div class="col-md-6">
+     <label class="form-label" for="multicol-country">الكمية</label>
+     <input name="quantity" type="number" id="multicol-country" class="form-control" placeholder="" />
+   </div>	
+   <div class="col-md-6">
+     <label class="form-label" for="multicol-format">الصيغة</label>
+     <input name="format" type="text" id="multicol-format" class="form-control" placeholder="" />
+   </div>
+   <div class="col-md-6">
+     <div class="form-password-toggle">
+       <label class="form-label" for="multicol-confirm-password">الحالة</label>
+       <div class="input-group input-group-merge">
+       <label class="switch">
+           <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
+           <span class="switch-toggle-slider">
+             <span class="switch-on"></span>
+             <span class="switch-off"></span>
+           </span>
+           <span class="switch-label"> مفعل </span>
+         </label>
+         </div>
         </div>
       </div>
+      <div>
+          <label for="exampleFormControlTextarea1" class="form-label">الوصف</label>
+          <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
     </div>
     
     
     <div class="pt-4">
-      <button type="submit" class="btn btn-primary me-sm-3 me-1">حفظ</button>
-      <button type="reset" class="btn btn-label-secondary">الالغاء</button>
+      <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+      <button type="reset" class="btn btn-label-secondary">Cancel</button>
     </div>
   </form>
 </div>
+</div>
+          <!-- / Content -->
+            
+
+     
+
+      
+      
+     
+     
+    
+   
 
 
 <!-- Multi Column with Form Separator -->

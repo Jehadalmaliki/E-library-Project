@@ -148,12 +148,12 @@
     </a>
     <ul class="menu-sub">
     <li class="menu-item">
-        <a href="/new_author" class="menu-link">
+        <a href="/new_Publisher" class="menu-link">
           <div data-i18n="اضافه دار النشر"> </div>
         </a>
       </li>
       <li class="menu-item">
-        <a href="/authors" class="menu-link">
+        <a href="/publisher" class="menu-link">
         <div data-i18n="عرض دار النشر"> </div>
         </a>
       </li>
