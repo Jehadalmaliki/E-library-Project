@@ -35,7 +35,7 @@ class publishersController extends Controller{
 
         $Publisher->image=$imageName!=null?$imageName:"default.png";
         $Publisher->created_by=1;
-        $Publisher->is_active=$_POST['is_active'];
+        $Publisher->is_active=isset($_POST['is_active'])?1:0;
 
       
         if($Publisher->save())
