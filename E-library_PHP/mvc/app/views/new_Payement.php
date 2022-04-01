@@ -71,16 +71,16 @@
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <h5 class="card-header">انشاء عرض جديد</h5>
+  <h5 class="card-header">انشاء طريقه جديد</h5>
   <form class="card-body" action="/save_Payements" method="POST" enctype="multipart/form-data">
     
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">اسم العرض</label>
+        <label class="form-label" for="multicol-username">اسم الدفع</label>
         <input name="name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-email">صورة العرض</label>
+        <label class="form-label" for="multicol-email">صورة الدفع</label>
         <div class="input-group input-group-merge">
           <input  name="image" type="file"  class="form-control"  aria-describedby="multicol-email2" />
           

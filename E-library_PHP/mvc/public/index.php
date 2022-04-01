@@ -10,6 +10,7 @@ use coding\app\controllers\payementsController;
 use coding\app\controllers\BooksController;
 use coding\app\controllers\offersController;
 use coding\app\controllers\ordersController;
+use coding\app\controllers\HomeController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -28,6 +29,16 @@ $config=array(
 $system=new AppSystem($config);
 
 /** web routes  */
+
+//Home Router
+
+Router::get('/', [HomeController::class, 'index']);
+Router::get('/cart', [HomeController::class, 'cart']);
+Router::get('/catogrypag', [HomeController::class, 'catogrypag']);
+Router::get('/detailspag', [HomeController::class, 'details']);
+Router::get('/checkout', [HomeController::class, 'checkout']);
+
+
 
 // Categories Router
 Router::get('/categories',[CategoriesController::class,'listAll']);
