@@ -11,6 +11,7 @@ use coding\app\controllers\BooksController;
 use coding\app\controllers\offersController;
 use coding\app\controllers\ordersController;
 use coding\app\controllers\HomeController;
+use coding\app\controllers\rolesController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -37,7 +38,13 @@ Router::get('/cart', [HomeController::class, 'cart']);
 Router::get('/catogrypag', [HomeController::class, 'catogrypag']);
 Router::get('/detailspag', [HomeController::class, 'details']);
 Router::get('/checkout', [HomeController::class, 'checkout']);
-
+//Roles Router
+Router::get('/roles',[rolesController::class,'listAll']);
+Router::get('/new_role',[rolesController::class,'add_role']);
+Router::get('/edit_role',[rolesController::class,'editrole']);
+Router::get('/remove_role',[rolesController::class,'remove']);
+Router::post('/save_role',[rolesController::class,'store']);
+Router::post('/update_role',[rolesController::class,'update']);
 
 
 // Categories Router
