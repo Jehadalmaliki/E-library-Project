@@ -12,6 +12,7 @@ use coding\app\controllers\offersController;
 use coding\app\controllers\ordersController;
 use coding\app\controllers\HomeController;
 use coding\app\controllers\rolesController;
+use coding\app\controllers\user_pay_MethController;
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 
@@ -101,6 +102,12 @@ Router::post('/save_offers',[offersController::class,'store']);
 Router::get('/order',[ordersController::class,'listAll']);
 Router::get('/new_orders',[ordersController::class,'newOrder']);
 Router::post('/save_orders',[ordersController::class,'store']);
+
+//user_payment_methodes Router
+Router::get('/user_payment',[user_pay_MethController::class,'listAll']);
+Router::get('/new_user_payment',[user_pay_MethController::class,'add_user_payment']);
+Router::post('/save_user_payment',[user_pay_MethController::class,'store']);
+
 
 /** end of web routes */
 $system->start();
