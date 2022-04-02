@@ -64,26 +64,35 @@
             
             
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> </h4>
-
 <div class="card mb-4">
- 
   <form class="card-body" action="/save_user" method="POST">
-    <h6>تفاصيل المستخدم</h6>
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">الاسم</label>
-        <input name="name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-username">اسم المستخدم</label>
+        <input name="name" type="text" id="multicol-username" class="form-control" placeholder="" />
       </div>
       <div class="col-md-6">
         <label class="form-label" for="multicol-email">الايميل</label>
         <div class="input-group input-group-merge">
-          <input  name="email"type="text" id="multicol-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="multicol-email2" />
+          <input  name="email"type="text" id="multicol-email" class="form-control" placeholder="" aria-label="" aria-describedby="multicol-email2" />
           <span class="input-group-text" id="multicol-email2">@example.com</span>
         </div>
       </div>
+      <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
+      <label class="form-label" for="multicol-email">الصلاحية</label>
+      <select name="roles" class="form-select item-details mb-2">
+                        <?php foreach($params as $role){?>
+                 ?>
+    <option  value ='<?=$role['id']?>'><?=$role['name']?></option>
+			       	
+		         	<?php
+ 
+                         }?>
+      </select>
+      </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">كلمه المرور</label>
+          <label class="form-label" for="multicol-password">رقم السر</label>
           <div class="input-group input-group-merge">
             <input  name="password" type="password" id="multicol-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-password2" />
             <span class="input-group-text cursor-pointer" id="multicol-password2"><i class="bx bx-hide"></i></span>
@@ -92,7 +101,7 @@
       </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">user activation</label>
+          <label class="form-label" for="multicol-confirm-password">الحالة</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
@@ -100,19 +109,29 @@
                 <span class="switch-on"></span>
                 <span class="switch-off"></span>
               </span>
-              <span class="switch-label">is active</span>
+              <span class="switch-label"> مفعل </span>
             </label>
           </div>
         </div>
       </div>
     </div>
+    </div>
     
     
     <div class="pt-4">
-      <button type="submit" class="btn btn-primary me-sm-3 me-1">حفظ</button>
-      <button type="reset" class="btn btn-label-secondary">الالغاء</button>
+      <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+      <button type="reset" class="btn btn-label-secondary">Cancel</button>
     </div>
   </form>
+
+
+
+
+
+
+            
+          </div>
+
 </div>
 
 
