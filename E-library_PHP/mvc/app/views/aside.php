@@ -140,6 +140,11 @@
           <div data-i18n=" عرض profile المستخدم" > عرض profile المستخدم </div>
         </a>
       </li>
+      <li class="menu-item">
+        <a href="/edit_user" class="menu-link">
+        <div data-i18n="تعديل المستخدم"> </div>
+        </a>
+      </li>
     </ul>
   </li>
   <!-- AUTHORS & Tables -->

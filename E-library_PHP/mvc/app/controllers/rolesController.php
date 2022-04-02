@@ -29,7 +29,7 @@ class rolesController extends Controller{
         $role=new roles();
         
         $role->name=$_POST['name'];
-        $role->is_active=$_POST['is_active'];
+        $role->is_active=isset($_POST['is_active'])?1:0;
 
       
         if($role->save())

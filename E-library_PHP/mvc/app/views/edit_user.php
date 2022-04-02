@@ -54,16 +54,27 @@
 <?php include_once ('include/nav.php');?>
 <!-- / Navbar -->
 
+       
+
+
+<!-- / Navbar -->
+
       
 
       <!-- Content wrapper -->
       <div class="content-wrapper">
 
         <!-- Content -->
-<div class="container-xxl flex-grow-1 container-p-y">
+        
+          <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> </h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> تعديل المستخدم</h4>
+
+
+
+
+<!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <form class="card-body" action="/save_user" method="POST">
     <div class="row g-3">
@@ -79,16 +90,14 @@
         </div>
       </div>
       <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
-      <label class="form-label" for="multicol-email">الصلاحية</label>
-      <select name="roles" class="form-select item-details mb-2">
-                        <?php foreach($params as $role){?>
-                 ?>
-    <option  value ='<?=$role['id']?>'><?=$role['name']?></option>
-			       	
-		         	<?php
- 
-                         }?>
-      </select>
+      <label class="form-label" for="multicol-email"> الصلاحية</label>
+                    <select class="form-select item-details mb-2">
+                      <option selected disabled>Select Item</option>
+                      <option value="App Design">App Design</option>
+                      <option value="App Customization">App Customization</option>
+                      <option value="ABC Template">ABC Template</option>
+                      <option value="App Development">App Development</option>
+                    </select>
       </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
@@ -123,7 +132,7 @@
       <button type="reset" class="btn btn-label-secondary">Cancel</button>
     </div>
   </form>
-
+</div>
 
 
 
@@ -131,19 +140,10 @@
 
             
           </div>
-
-</div>
-
-
-<!-- Multi Column with Form Separator -->
-
           <!-- / Content -->
 
           
-          
 
-<!-- Footer -->
-<?php include_once ('include/footer.php');?>
 <!-- / Footer -->
 
           
@@ -156,17 +156,28 @@
 
     
     
- 
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+    
+  </div>
+  <!-- / Layout wrapper -->
 
   
-  
-  
+
 
   
 
   <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
   <?php include_once ('include/script.php');?>
+  <!-- endbuild -->
+
+  
+  
 </body>
 
 
