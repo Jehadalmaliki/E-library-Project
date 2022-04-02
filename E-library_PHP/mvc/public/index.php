@@ -59,6 +59,7 @@ Router::post('/update_category',[CategoriesController::class,'update']);
 Router::get('/users',[UsersController::class,'listAll']);
 Router::get('/new_user',[UsersController::class,'newUser']);
 Router::post('/save_user',[UsersController::class,'saveUser']);
+Router::get('/edit_user',[UsersController::class,'editUser']);
 
 //Authore Router
 Router::get('/authors',[AuthorsController::class,'listAll']);

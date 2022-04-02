@@ -71,32 +71,49 @@
     <h6>تفاصيل عنوان المستخدم</h6>
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">رقم المستخدم</label>
-        <input name="user_id" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+      <label class="form-label" for="multicol-discount">العنوان</label>
+        <input name="address" type="text" id="multicol-discount" class="form-control" placeholder="" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">رقم المدينه</label>
-        <input name="city_id" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-phone">الهاتف</label>
+        <input name="phone" type="tel" id="multicol-phone" class="form-control" placeholder="" />
+      </div>
+      <div class="col-md-6 select2-primary">
+        <label class="form-label" for="multicol-language">المستخدم</label>
+        <select name="users" class="form-select item-details mb-2">
+                    <?php
+                foreach($params['users'] as $user){
+                 ?>
+    <option  value ='<?=$user['id']?>'><?=$user['name']?></option>
+			       	
+		         	<?php
+ 
+                         }?>
+               
+                    </select>
+      </div>
+      <div class="col-md-6 select2-primary">
+        <label class="form-label" for="multicol-language">المدينة </label>
+        <select name="cities" class="form-select item-details mb-2">
+                    <?php
+                foreach($params['cities'] as $city){
+                 ?>
+    <option  value ='<?=$city['id']?>'><?=$city['name']?></option>
+			       	
+		         	<?php
+ 
+                         }?>
+               
+                    </select>
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">التلفون</label>
-        <input name="phone" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-discount">خط الطول</label>
+        <input name="lng" type="number" id="multicol-discount" class="form-control" placeholder="" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> العنوان</label>
-        <input name="address" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <label class="form-label" for="multicol-discount">	خط العرض</label>
+        <input name="lat" type="number" id="multicol-discount" class="form-control" placeholder="" />
       </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> lat</label>
-        <input name="lat" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username"> lng</label>
-        <input name="lng" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
-      </div>
-      
-      
-     
       <div class="col-md-6">
         <div class="form-password-toggle">
           <label class="form-label" for="multicol-confirm-password">user activation</label>

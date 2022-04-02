@@ -36,7 +36,7 @@ class UsersController extends Controller{
         $user->name=$_POST['name'];
         $user->email=$_POST['email'];
         $user->password=md5($_POST['password']);
-        $user->is_active=$_POST['is_active'];
+        $user->is_active=isset($_POST['is_active'])?1:0;
         $user->role_id=$_POST['roles'];
         if($user->save())
         $this->view('feedback',['success'=>'تم ادخال البيانات بنجاح']);

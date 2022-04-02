@@ -2,10 +2,22 @@
 namespace coding\app\controllers;
 
 use coding\app\models\Useradd;
+use coding\app\models\City;
+use coding\app\models\User;
 
 class Useradds extends Controller{
     function newUseradd(){
-        $this->view('new_Useradd');
+        $users=new User();
+        $allusers =$users->getAll();
+
+        $cities=new City();
+        $allcities=$cities->getAll();
+
+        $data=[
+            "users" =>$allusers,
+            "cities"=> $allcities
+        ];
+        $this->view('new_Useradd',$data);
     }
     function listAll(){
         $Useraddresses=new Useradd();
@@ -17,14 +29,12 @@ class Useradds extends Controller{
     }
     public function creat(){
         $Useraddresses=new Useradd();
-        $Useraddresses->user_id=$_POST['user_id'];
-        $Useraddresses->city_id=$_POST['city_id'];
+        $Useraddresses->user_id=$_POST['users'];
+        $Useraddresses->city_id=$_POST['cities'];
         $Useraddresses->address=$_POST['address'];
         $Useraddresses->phone=$_POST['phone'];
-      
-        $Useraddresses->lat=$_POST['lat'];
         $Useraddresses->lng=$_POST['lng'];
-  
+        $Useraddresses->lat=$_POST['lat'];
         $Useraddresses->is_active=isset($_POST['is_active'])?1:0;
       
         if( $Useraddresses->save())
