@@ -127,7 +127,24 @@
               </div>
               <a href="/catogrypag" id="go">عرض الكل</a>
           </div>
-         
+          <div class="packages" id="packages">
+          <h1 >الكتب التاريخيه</h1>
+          <?php foreach($params['books']  as $book){?>
+           <?php if ($book['category_id']==1){?> 
+          <div class="box-container">
+   
+                <div class="box">
+                  <img src="images/<?= $book['image'];?>">
+                    <div class="content">
+                        <h3> <img src="assets1/img/svg/svgexport-57.svg"><?= $book['format'];?>   </h3>
+                        <p><?= $book['title'];?></p>
+                        <div class="price"> <?= $book['price'];?>ر.س<span>ريال سعودي</span> </div>
+                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
+                    </div>
+                   
+                </div>
+                <?php } }?> 
+                </div> 
          
                
 
