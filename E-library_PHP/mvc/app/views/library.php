@@ -35,41 +35,21 @@
               </h1>
              <div class="box-container">
           
+             <?php foreach($params['categories']  as $category){?>
+              <?php if ($category['is_active']== 1){?>
                   <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-46.svg"></a>
-                      <h3>دين</h3>
+                    <a href="/catogrypag" ><img src="images/<?= $category['image'];?>"></a>
+                      <h3><?= $category['name'];?></h3>
                   </div>
               
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-42.svg"></a> 
-                      <h3>تاريخ</h3>
-                  </div>
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-40.svg"></a>
-                      <h3>روايات</h3>
-                  </div>
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-43.svg"></a>
-                      <h3>سياسة</h3>
+                  <?php } 
+                  
+               
+               } ?>
+               
                       
                   </div>
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-45.svg"></a>
-                      <h3>اقتصاد</h3>
-                     
-                  </div>
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-47.svg"></a>
-                      <h3>طبخ</h3>
-                      
-                  </div>
-                  <div class="box">
-                    <a href="/catogrypag" ><img src="assets1/img/svg/svgexport-48.svg"></a> 
-                      <h3>تربية</h3>
-                      
-                  </div>
-          
-              </div>
+                
           
             </div>
             <div class="Advertisment">
@@ -147,60 +127,13 @@
               </div>
               <a href="/catogrypag" id="go">عرض الكل</a>
           </div>
-          <div class="packages" id="packages">
-          
-            <h1 > الكتب التاريخية</h1>
-          <div class="box-container">
-        
-                <div class="box">
-                  <img src="assets1/img/b2.jpg">
-                    <div class="content">
-                        <h3> <img src="assets1/img/svg/svgexport-57.svg">كتاب الالكتروني </h3>
-                        <p>العادات الذرية لاكثر الناس نجاحا</p>
-                        <div class="price"> 90.00 <span>ريال سعودي</span> </div>
-                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
-                    </div>
-                </div>
-        
-                <div class="box">
-                  <img src="assets1/img/b3.jpg">
-                    <div class="content">
-                        <h3> <img src="assets1/img/svg/svgexport-57.svg">كتاب الالكتروني </h3>
-                        <p>العادات الذرية لاكثر الناس نجاحا</p>
-                        <div class="price"> 80.00 <span>ريال سعودي</span> </div>
-                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
-                    </div>
-                </div>
-                <div class="box">
-                  <img src="assets1/img/book.jpg">
-                    <div class="content">
-                        <h3> <img src="assets1/img/svg/svgexport-57.svg">كتاب الالكتروني </h3>
-                        <p>العادات الذرية لاكثر الناس نجاحا</p>
-                        <div class="price"> 70.00 <span>ريال سعودي</span> </div>
-                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
-                    </div>
-                </div>
+         
+         
+               
 
-                <div class="box">
-                  <img src="iassets1/mg/b5.jpg">
-                    <div class="content">
-                        <h3> <img src="assets1/img/svg/svgexport-57.svg">كتاب الالكتروني </h3>
-                        <p>العادات الذرية لاكثر الناس نجاحا</p>
-                        <div class="price"> 90.00 <span>ريال سعودي</span> </div>
-                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
-                    </div>
-                </div>
-                <div class="box">
-                  <img src="assets1/img/b4.jpg">
-                    <div class="content">
-                        <h3> <img src="assets1/img/svg/svgexport-57.svg">كتاب الالكتروني </h3>
-                        <p>العادات الذرية لاكثر الناس نجاحا</p>
-                        <div class="price"> 90.00 <span>ريال سعودي</span> </div>
-                       <div class="btn"><a href="#" class="btn"><img src="assets1/img/svg/svgexport-56.svg"><img src="assets1/img/svg/svgexport-21.svg"><img src="assets1/img/svg/svgexport-55.svg"></a></div> 
-                    </div>
-                </div>
+                
             
-            </div>
+          
             <a href="/catogrypag" id="go">عرض الكل</a>
         </div>
         <div class="packages" id="packages">
