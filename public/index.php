@@ -48,7 +48,7 @@ Router::post('/save_role',[rolesController::class,'store']);
 Router::post('/update_role',[rolesController::class,'update']);
 
 
-// Categories Router
+// Categories
 Router::get('/categories',[CategoriesController::class,'listAll']);
 Router::get('/add_category',[CategoriesController::class,'create']);
 Router::get('/edit_category/{id}',[CategoriesController::class,'edit']);
